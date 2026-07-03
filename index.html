@@ -114,8 +114,7 @@
        4. Skriv inn det du vil endre
        5. Klikk den grønne "Commit changes"-knappen
      Etter omtrent ett minutt er endringen synlig på evers.no/paul.
-     Teksten mellom <!-- og --> (som dette) er bare hjelpenotater
-     og vises ALDRI på selve siden.
+     Tekst i hjelpenotater (som denne) vises ALDRI på selve siden.
      ================================================================= -->
 
 <main>
@@ -128,7 +127,7 @@
          (f.eks. "meg.jpg") og bytt ut linjen under med:
          <div class="avatar"><img src="meg.jpg" alt="Paul Evers" /></div>
          Vil du ikke ha bilde? Slett hele .avatar-blokken. -->
-    <div class="avatar">P</div>
+    <div class="avatar" aria-hidden="true">P</div>
 
     <!-- ENDRE NAVN -->
     <h1>Paul Evers</h1>
@@ -159,12 +158,13 @@
     <h2>Kontakt</h2>
     <div class="card">
       <ul class="links">
-        <!-- ENDRE e-postadressen tre steder på linjen under
+        <!-- ENDRE e-postadressen begge steder på linjen under
              (etter mailto: og teksten som vises). -->
         <li>E-post: <a href="mailto:navn@example.com">navn@example.com</a></li>
 
-        <!-- VALGFRIE LENKER — fjern // foran for å vise dem, eller slett linjene.
-             Bytt # med den faktiske nettadressen. -->
+        <!-- VALGFRIE LENKER — for å vise en linje: fjern <!-- foran den og
+             de tre tegnene bakerst (to bindestreker og >). Vil du ikke ha
+             lenken, slett hele linjen. Bytt # med den faktiske nettadressen. -->
         <!-- <li><a href="https://www.linkedin.com/">LinkedIn</a></li> -->
         <!-- <li><a href="#">Annen lenke</a></li> -->
       </ul>
